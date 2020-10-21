@@ -1,0 +1,43 @@
+{
+  "name": "frontend-boilerplate",
+  "version": "0.1.0",
+  "description": "Frontend Boilerplate based on gulp with twig templating, sass compiling, js minifying, imagemin and browsersync. Also includes css reset and yahoo pure grid.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp mulch",
+    "test": "gulp mulch-compile",
+    "images": "gulp images"
+  },
+  "author": "Creative Guri",
+  "license": "MIT",
+  "repository": {},
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "fontforge": "0.0.4",
+    "glob": "^7.1.2",
+    "gulp": "^3.0.0",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-cli": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.2.1",
+    "gulp-fontgen": "^0.2.5",
+    "gulp-foreach": "^0.1.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rm": "^1.0.5",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-twig": "^1.1.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "jquery": "^3.2.1",
+    "lesshat": "^4.1.0",
+    "purecss-sass": "^1.0.0",
+    "swiper": "^4.4.6"
+  },
+  "devDependencies": {
+    "gsap": "^2.0.2",
+    "gulp-autoprefixer": "^7.0.1"
+  }
+}
