@@ -1,0 +1,84 @@
+.button {
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        @include transition(all 0.2s ease);
+        position: relative;
+        font-size: 1.6rem
+    }
+    &:hover {
+        transform: translateY(-3px);
+        @include box-shadow(0, 10px, 10px, rgba($color-black, .25));
+    }
+    &:active {
+        transform: translateY(-1px);
+        @include box-shadow(0, 5px, 10px, rgba($color-black, .25));
+    }
+    &__fill {
+        background-color: #E64D4D;
+        border: transparent;
+        color: #ffffff;
+        &:hover {
+            color: #ffffff;
+        }
+    }
+    &__border {
+        border: 2px solid #E64D4D;
+        color: #E64D4D;
+        &:hover {
+            background-color: #E64D4D;
+            color: #ffffff;
+        }
+    }
+    @media screen and (max-width:767px) {
+        &:link,
+        &:visited {
+            padding: 1.3rem 2rem;
+            font-size: 1.2rem
+        }
+    }
+}
+
+.button,
+button {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    @include transition(all 0.2s ease);
+    position: relative;
+    font-size: 1.6rem;
+    &:hover {
+        transform: translateY(-3px);
+        @include box-shadow(0, 10px, 10px, rgba($color-black, .25));
+    }
+    &:active {
+        transform: translateY(-1px);
+        @include box-shadow(0, 5px, 10px, rgba($color-black, .25));
+    }
+    &__fill {
+        background-color: #E64D4D;
+        border: transparent;
+        color: #ffffff;
+        &:hover {
+            color: #ffffff;
+        }
+    }
+    &__border {
+        border: 2px solid #E64D4D;
+        color: #E64D4D;
+        &:hover {
+            background-color: #E64D4D;
+            color: #ffffff;
+        }
+    }
+    @media screen and (max-width:767px) {
+        padding: 1.3rem 2rem;
+        font-size: 1.2rem
+    }
+}

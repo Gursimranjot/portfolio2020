@@ -1,0 +1,90 @@
+.footer {
+    margin-top: 50px;
+    &__header {
+        font-size: 5rem;
+        color: $dark-text;
+        @media (max-width: 767px) {
+            font-size: 3rem;
+        }
+    }
+    .paragraph {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        @media (max-width: 767px) {
+            font-size: 1.6rem;
+        }
+    }
+    &__contact {
+        color: $dark-text;
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+        span {
+            display: block;
+        }
+        @media (max-width:767px) {
+            font-size: 1.6rem;
+        }
+    }
+    &__social {
+        ul {
+            overflow: hidden;
+            list-style-type: none;
+            margin: 0 0 3em;
+            padding: 0;
+            @include flexbox;
+            li {
+                flex: 0 0 5%;
+                @media (max-width: 767px) {
+                    flex: 1 0 10%;
+                }
+            }
+            a {
+                position: relative;
+                font-size: 1rem;
+                width: 30px;
+                height: 30px;
+                padding: 0;
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+                color: $dark-text;
+                border: 2px solid $dark-text;
+                padding: 1em;
+                border-radius: 50px;
+                // transition: border-color .3s ease, color .3s ease;
+                @include transition(border-color .3s ease, color .3s ease);
+                &:hover,
+                &:focus {
+                    color: $color-theme-red;
+                    border-color: $color-theme-red;
+                }
+            }
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 1.5em;
+                height: 1.5em;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                fill: $dark-text;
+                @include transition(0.5s ease);
+                &:hover,
+                &:focus {
+                    fill: $color-theme-red;
+                }
+            }
+        }
+    }
+    &__copyright {
+        font-size: 2rem;
+        text-align: center;
+        background-color: $color-theme-red;
+        color: #ffffff;
+        padding: 20px 0;
+        margin-top: 30px;
+    }
+}

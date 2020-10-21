@@ -1,0 +1,25 @@
+// Target all anchor tags
+
+
+a{
+    @include transition(0.2s ease-in);
+    color: inherit;
+    &:hover,
+    &:focus{
+        text-decoration: none;
+    }
+}
+
+img{
+    max-width: 100%;
+}
+
+p{
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+.paragraph{
+    color: $dark-text;
+    line-height: 1.4;
+}

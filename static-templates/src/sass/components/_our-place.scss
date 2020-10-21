@@ -1,0 +1,120 @@
+.work-section{
+   overflow: hidden;
+}
+
+.our-place {
+    position: relative;
+    padding: 10px 100px;
+    &.no-before {
+        &:before {
+            top: 0;
+            bottom: 0;
+        }
+    }
+  
+    .ourPlace_container {
+        width: calc(300% + 300px) !important;
+        margin-left: calc(-100% - 150px) !important;
+    }
+    .caroufredsel_wrapper {
+        margin-bottom: 0 !important;
+        margin-left: 0 !important;
+    }
+    ul{
+ 
+    }
+    .swiper-slide {
+        // float: left;
+        padding: 0 50px;
+        height: auto !important;
+        &-prev,
+        &-next{
+            cursor: pointer;
+        }
+        img {
+            width: 100%;
+        }
+        &:first-child,
+        &:nth-child(3) {
+            cursor: pointer;
+        }
+    }
+    figcaption {
+        margin-top: 32px;
+        float: left;
+        color: $color-theme-red;
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .page-r {
+        float: right;
+        margin-top: -35px;
+        z-index: 9;
+        position: relative;
+        .swiper-pagination-bullet {
+            text-indent: -999px;
+            overflow: hidden;
+            height: 10px;
+            width: 10px;
+            background-color: rgba(0, 19, 86, 0.2);
+            display: inline-block;
+            border-radius: 5px;
+            margin-right: 10px;
+            &.selected,
+            &.swiper-pagination-bullet-active,
+            &:hover {
+                background-color: $color-theme-red;
+            }
+        }
+    }
+    @media (max-width: 1200px) {
+        padding-top: 60px;
+        &:before {
+            top: 0;
+        }
+    }
+    @media (max-width: 991px) {
+        padding: 60px 75px 0;
+        &.pcSlider {
+            padding-left: 15px;
+            padding-right: 15px;
+            &:before {
+                height: 449px;
+            }
+        }
+        &.no-before {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        .swiper-slide {
+            float: left;
+            padding: 0 20px;
+        }
+        &:before {
+            top: -348px;
+            bottom: -10px;
+        }
+        figcaption {
+            font-size: 14px;
+            margin-top: 10px;
+            float: none;
+        }
+        .page-r {
+            float: none;
+            margin: 0 -30px;
+            .swiper-pagination-bullet {
+                height: 6px;
+                width: 6px;
+            }
+        }
+    }
+    @media (max-width:767px) {
+        padding: 30px 35px 0;
+    }
+    @media (min-width: 992px) {
+        &.no-before {
+            padding-top: 205px;
+            padding-bottom: 205px;
+        }
+    }
+}

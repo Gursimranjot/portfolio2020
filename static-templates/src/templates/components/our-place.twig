@@ -1,0 +1,60 @@
+{# 
+<section class="sliderfull sliderfull--margin">
+    <div class="container">
+        <div class="team-inner swiper-container-full">
+            <div class="list-unstyled swiper-wrapper">
+                <div class="swiper-slide slider--item">
+                    <figure class="fiftythree-thirtyone" >
+                            <div class="content" style="background-image:url({{img}}/sliderfull/1.jpg)">
+
+                            </div>
+                    </figure>
+                    <span>Another day at work</span>
+                </div>
+                <div class="swiper-slide slider--item">
+                    <figure class="fiftythree-thirtyone" >
+                        <div class="content" style="background-image:url({{img}}/sliderfull/2.jpg)">
+                                
+                        </div>
+                    </figure>
+                    <span>Another day at work</span>
+                </div>
+                <div class=" swiper-slide slider--item">
+                    <figure class="fiftythree-thirtyone" >
+                        <div class="content" style="background-image:url({{img}}/sliderfull/3.jpg)">
+                                
+                        </div>
+                    </figure>
+                    <span>Another day at work</span>
+                </div>
+            </div>
+           
+           <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+         </div>
+
+</div>
+</section> 
+#}
+
+
+ <div class="our-place {{classes}}" >
+    <div id="{{ID}}" class="ourPlace_container">
+
+        <ul class="list-unstyled swiper-wrapper">
+            {% for i in 1..4 %}
+                <li class='swiper-slide'>
+                    <figure>
+                        <img src="{{img}}/{{pic}}" alt="">
+                        <figcaption>Swiggy Redesign</figcaption>
+                    </figure>
+                
+                </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+    <div class="page-r" id="pageR"></div>
+
+</div> 
+<!--    our-place ends  -->

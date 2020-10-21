@@ -1,0 +1,35 @@
+.u-center-text{text-align: center;}
+.u-margin-bottom-big{
+    margin-bottom: 8rem;
+}
+.u-margin-bottom-medium{
+    margin-bottom: 8rem;
+}
+.u-margin-small{
+    margin-bottom: 2rem;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    display: none;
+    z-index: 20;
+    background-color: #000;
+    &.show-overlay{
+        display: block;
+        opacity: 0.5;
+        pointer-events: all;
+    }
+}
+
+.center-header{
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+    color: $dark-text;
+    font-size: 4rem;
+}

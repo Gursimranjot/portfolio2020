@@ -1,0 +1,100 @@
+{% extends '../_home.twig' %} {% block titletag %}Home {% endblock %} {% block bodytag %}
+
+<main class="Site-content">
+    {# <section class="approach">
+        <div class="container">
+            <h2>My approach towards work</h2>
+            <div class="row">
+
+                <div class="col-md-3 col-sm-6 col-xs-6 col-full">
+                    <div class="approach--box">
+                        <div class="approach--icon">
+                            <img src="{{img}}/process/research.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="approach--details">
+                        <span>Research</span>
+                        <p>
+                            First I research regarding the goals that organization wants to achieve with product or app or graphics they want.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 col-full">
+                    <div class="approach--box">
+                        <div class="approach--icon">
+                            <img src="{{img}}/process/plan.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="approach--details">
+                        <span>Plan</span>
+                        <p>
+                            Then I plan according to their needs what they expect from their product and start working on it
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 col-full">
+                    <div class="approach--box">
+                        <div class="approach--icon">
+                            <img src="{{img}}/process/Design.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="approach--details">
+                        <span>Design</span>
+                        <p>
+                            First I research regarding the goals that organization wants to achieve with product or app or graphics they want.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 col-full">
+                    <div class="approach--box">
+                        <div class="approach--icon">
+                            <img src="{{img}}/process/delivery.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="approach--details">
+                        <span>Delivery</span>
+                        <p>
+                            Last important file is delivery of the project at the time and if they need help them launch the product
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> #}
+
+    {% for i in 0..2 %}
+    {# <section class="slider slider-full">
+        <div class="container">
+            <h3>Web Work</h3>
+            <div class="contentslider">
+                <div class="swiper-container swiper-full">
+                    <div class="swiper-wrapper">
+                        {% for i in 0..10 %}
+                        <div class="swiper-slide">
+                            <a href="">
+                                <figure>
+                                    <div style="background-image:url({{img}}/dummy/img{{0}}.jpg)">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <h3>Client - Google </h3>
+                                            <p class="em">Platform-Web &amp; Mobile</p>
+
+                                        </div>
+                                        <div class="background"></div>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section> #}
+    {% endfor %}
+</main>
+
+{% endblock %}
